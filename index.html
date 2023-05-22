@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3a5429e6d8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!-----header----->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>University Student</p>
+                <h1>Hey, my name is <br><span>Enlai Yii</span>.</h1>
+            </div>
+        </div>
+    </div>
+<!-----about me section----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>The Number_Of_Connected_Components function uses depth-first search 
+                        (DFS) to traverse the connected components of the graph. The time 
+                        complexity of DFS is O(V+E), where V is the number of vertices and 
+                        E is the number of edges. The function calls DFS on each unvisited 
+                        node in the graph, which takes O(V+E) time. Therefore, the time 
+                        complexity of the function is O(V+E).</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('competitions')">Competitions</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game Development</span><br>Creating VR and 2D Games</li>
+                            <li><span>Website Development</span><br>Web Application Development</li>
+                            <li><span>App Development</span><br>Designing Android Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Present</span><br>Corporate Relations Director with DATACON</li>
+                            <li><span>2023 - Present</span><br>Workshop Director with Code[Coogs]</li>
+                            <li><span>2022 - Present</span><br>Teaching Assistant at Univerity of Houston</li>
+                            <li><span>2021 - 2021</span><br>Mentee for Tech Resilience Mentor Program at Microsoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>
+                                <li>Computer Science BS from University of Houston</li>
+                                <li>Computer Engineering Minor from University of Houston</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents competition" id="competitions">
+                        <ul>
+                            <li><span>2023</span><br>JSC Hack 2023 - Space Stream - Best Rookie Team</li>
+                            <li><span>2022</span><br>CodeRED Odyssey - ROVA - 2nd Place Winners</li>
+                            <li><span>2022</span><br>CodeRED Artemis - Study Tracker</li>
+                            <a href="#portfolio">Learn more about this projects on My Portfolio</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----service section----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>In summary, the overall time complexity of the algorithm is O(V+E).</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Full Stack</h2>
+                    <p>In summary, the overall time complexity of the algorithm is O(V+E).</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>In summary, the overall time complexity of the algorithm is O(V+E).</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----portfolio section----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="portfolio-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>MOONSTRUCK</h3>
+                        <p>My first text game I developed. Based on 90s Pokemon game, the game is a RPG where you fight against an AI and the more you progress, the more lore is uncovered.</p>
+                        <a href="https://github.com/enleeyee/MOONSTRUCK"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>ROVA</h3>
+                        <p>My second hackathon where my team was able to secure 2nd place in the challenge. Learn more about ROVA through the link below.</p>
+                        <a href="https://devpost.com/software/rova"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Space Stream</h3>
+                        <p>My third hackathon where my team scored the Best Rookie Team as I mentored a team of freshmen. Learn more about Space Stream through the link below.</p>
+                        <a href="https://devpost.com/software/artemis-exploration-vr"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-----contact section----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> enleeyee@gmail.com</p>
+                    <p><i class="fa-regular fa-square-phone"></i> 832-691-4506</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/enlai-yii-97621321a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/enleeyee?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/en.lee.aeee/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyYOd7oOdW2MMHzMZdNhSRYonsglN1rQ2SVcFpkodIwgq9LUfb2szNbXySbXK32ZK57/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Sent Sueccessfully!"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    </body>
+</html>
